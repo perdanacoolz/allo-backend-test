@@ -3,7 +3,7 @@ package com.allobank.allobackendtest.model;
 import lombok.Data;
 
 import java.util.UUID;
-
+//test
 @Data
 public class Caleg {
     private UUID id;
