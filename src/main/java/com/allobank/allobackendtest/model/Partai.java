@@ -10,3 +10,4 @@ public class Partai {
     private String namaPartai;
     private Integer nomorUrut;
 }
+//test
