@@ -108,7 +108,7 @@ public class CalegController {
         pageTuts = calegRepository.findByDapilContaining(nama, pagingSort);
 
         calegs = pageTuts.getContent();
-
+//test
       Map<String, Object> response = new HashMap<>();
       response.put("tutorials", calegs);
       response.put("currentPage", pageTuts.getNumber());
