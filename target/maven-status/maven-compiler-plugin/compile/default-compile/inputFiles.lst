@@ -1,6 +1,7 @@
-D:\hallo2\src\main\java\com\allobank\allobackendtest\AlloBackendTestApplication.java
-D:\hallo2\src\main\java\com\allobank\allobackendtest\model\Dapil.java
-D:\hallo2\src\main\java\com\allobank\allobackendtest\model\JenisKelamin.java
-D:\hallo2\src\main\java\com\allobank\allobackendtest\model\Partai.java
-D:\hallo2\src\main\java\com\allobank\allobackendtest\model\test.java
-D:\hallo2\src\main\java\com\allobank\allobackendtest\model\Caleg.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\AlloBackendTestApplication.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\Caleg.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\JenisKelamin.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\Partai.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\repository\CalegRepository.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\controller\CalegController.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\Dapil.java
