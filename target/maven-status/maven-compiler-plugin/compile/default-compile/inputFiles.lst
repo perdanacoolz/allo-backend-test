@@ -1,7 +1,12 @@
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\CalegSearchCriteria.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\AlloBackendTestApplication.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\model\Caleg.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\model\JenisKelamin.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\model\Partai.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\repository\CalegCriteriaRepository.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\repository\CalegRepository.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\SpringApplication.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\model\CalegPage.java
+D:\allo_\src\main\java\com\allobank\allobackendtest\service\CalegService.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\controller\CalegController.java
 D:\allo_\src\main\java\com\allobank\allobackendtest\model\Dapil.java

@@ -1,28 +1,67 @@
 package com.allobank.allobackendtest.model;
-import lombok.Data;
+
+//import javax.persistence.*; // for Spring Boot 2
 import jakarta.persistence.*;
-import java.util.List;
-import java.util.UUID;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.GenericGenerator;
+
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
 @Table(name = "caleg")
- 
-@Data
 public class Caleg {
-     @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(name = "id", columnDefinition = "VARCHAR(255)")
-    private UUID id;
-    //private Dapil dapil;
+
+	@Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+	//@Column(name="id", insertable = false, updatable = false)
+    private Long id;
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "dapil_id")
+    private Dapil dapil;
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "partai_id")
     private Partai partai;
+    @Column(name = "nomorUrut")
     private Integer nomorUrut;
-    @Column(name = "namaDapil", nullable = false)
+    @Column(name = "nama")
     private String nama;
-    @Enumerated(EnumType.STRING)
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "jenkel_id")
     private JenisKelamin jenisKelamin;
+
+ 
+
+  public Caleg() {
+
+  }
+
+  public Caleg(String nama,  Integer nomorUrut) {
+    this.nama = nama;
+    this.nomorUrut = nomorUrut;
+    
+  }
+
+  public long getId() {
+    return id;
+  }
+
+  public String getnama() {
+    return nama;
+  }
+
+  public void setnama(String nama) {
+    this.nama = nama;
+  }
+   
+
+  public Integer getnomorUrut() {
+    return nomorUrut;
+  }
+
+  public void setnomorUrut(Integer nomorUrut) {
+    this.nomorUrut = nomorUrut ;
+  }
+
+ 
+  @Override
+  public String toString() {
+    return "Partai [id=" + id + ", nama=" + nama + ", nomorUrut=" + nomorUrut +"]";
+  }
+
 }
